@@ -318,7 +318,7 @@ define(['jquery', 'backbone', 'Channel', 'ScreenTemplateFactory', 'datepicker', 
                     var endDate = recSchedule.end_date.split(' ')[0];
                     var weekDays = recSchedule.week_days;
                     var elDays = $(Elements.SCHEDUALED_DAYS);
-                    // use bitwize operator << >> to compute days selected
+                    // use bitwise (bitwize) operator << >> to compute days selected
                     self.m_WEEKDAYS.forEach(function (v, i) {
                         var n = weekDays & v;
                         if (n == v) {
