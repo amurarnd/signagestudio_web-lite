@@ -385,7 +385,7 @@ define(['jquery', 'bootstrapfileinput', 'video', 'platform'], function ($, boots
             var self = this;
         };
         return ResourcesListView;
-    })(Backbone.View);
+    }(Backbone.View));
     return ResourcesListView;
 });
 //# sourceMappingURL=ResourcesListView.js.map
