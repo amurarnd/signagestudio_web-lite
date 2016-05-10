@@ -209,7 +209,7 @@ define(['jquery', 'validator'], function ($, validator) {
             }
         };
         return UpgradeView;
-    })(Backbone.View);
+    }(Backbone.View));
     return UpgradeView;
 });
 //# sourceMappingURL=UpgradeView.js.map
