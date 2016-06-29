@@ -322,11 +322,15 @@ define(['jquery', 'backbone', 'StackView', 'ScreenTemplateFactory', 'bootbox'], 
 
         /**
          Check if component is allowed under enterprise / prime membership
+         Note that if running under Hybrid or Private server default is to always allow
+         all components
          @method _checkAllowedComponent
          @param {Number} i_componentID
          @return {Number} 0 = hide, 1 = show, 2 = upgradable
          **/
         _checkAllowedComponent: function (i_componentID) {
+            if (BB.PRIV_HYBRID)
+                return 1;
             // free component so show it
 
             // FasterQ, open to all

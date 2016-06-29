@@ -148,7 +148,7 @@ define(['jquery', 'validator'], function ($, validator) {
                 function Digg() {
                 }
                 return Digg;
-            })();
+            }());
             var myDigg = new Digg();
             console.log(myDigg instanceof Digg);
             $.ajax({
@@ -189,7 +189,7 @@ define(['jquery', 'validator'], function ($, validator) {
                     }
                 };
                 return MyDoc;
-            })();
+            }());
             var doc = new MyDoc();
             doc.createElement('div');
             doc.createElement('span');
@@ -259,7 +259,7 @@ define(['jquery', 'validator'], function ($, validator) {
                 function AController() {
                 }
                 return AController;
-            })();
+            }());
             var aController = new AController();
             aController.someNum = 1;
             // private controllers:Array <IControllers>;
@@ -278,14 +278,14 @@ define(['jquery', 'validator'], function ($, validator) {
                     }
                 }
                 return MyClass;
-            })();
+            }());
             var sample = {
                 someMember: MyClass
             };
             var sampleInstance = new sample.someMember('lots', 'of', 'strings!!!');
         };
         return SampleView;
-    })(Backbone.View);
+    }(Backbone.View));
     return SampleView;
 });
 //# sourceMappingURL=SampleView.js.map

@@ -212,4 +212,3 @@ define(['jquery', 'validator'], function ($, validator) {
     }(Backbone.View));
     return UpgradeView;
 });
-//# sourceMappingURL=UpgradeView.js.map

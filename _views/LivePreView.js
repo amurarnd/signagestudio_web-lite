@@ -164,6 +164,7 @@ define(['jquery', 'backbone', 'flashdetect'], function ($, Backbone, flashdetect
                     if (_.isUndefined(bannerMode))
                         bannerMode = 1;
                     var url = pepper.livePreviewCampaign(self.m_campaignID, bannerMode);
+                    //console.log('Opening url ' + url)
                     var appEntryFaderView = BB.comBroker.getService(BB.SERVICES['APP_ENTRY_FADER_VIEW']);
                     appEntryFaderView.selectView(Elements.LIVE_PREVIEW);
                     $(Elements.IFRAME_EMBEDDED).attr('src', url);
